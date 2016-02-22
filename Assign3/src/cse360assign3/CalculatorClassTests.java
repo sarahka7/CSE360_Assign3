@@ -16,7 +16,7 @@ public class CalculatorClassTests {
 
 	@Test
 	public void getTotalTest() {
-		Calculator test = new Calculator();
+		//Calculator test = new Calculator();
 		assertEquals(25, total);
 	}
 	
@@ -59,6 +59,5 @@ public class CalculatorClassTests {
 		String history = test.getHistory(); 
 		assertEquals("0 + 7 - 2 / 4 * 2", history);
 	}
-	
 	
 }
