@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class CalculatorClassTests {
+public class CalculatorTest {
 	int total = 25; 
 	String history = "0"; 
 
