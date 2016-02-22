@@ -1,3 +1,8 @@
+/** jUnit tests for Calculator class
+ * @author Sarah Kaufman (PIN 417)
+ * @version Feb 18, 2016
+ * 
+ */
 package cse360assign3;
 
 import static org.junit.Assert.*;
