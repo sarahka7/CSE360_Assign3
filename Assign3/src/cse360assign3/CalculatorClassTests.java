@@ -6,6 +6,7 @@ import org.junit.Test;
 
 public class CalculatorClassTests {
 		int total = 25; 
+		String history = "0"; 
 
 
 	@Test
@@ -46,8 +47,12 @@ public class CalculatorClassTests {
 	@Test
 	public void getHistoryTest() {
 		Calculator test = new Calculator();
-		String string = test.getHistory();
-		assertEquals("", "");
+		test.add(7); 
+		test.subtract(2);
+		test.divide(4);
+		test.multiply(2);
+		String history = test.getHistory(); 
+		assertEquals("0 + 7 - 2 / 4 * 2", history);
 	}
 	
 	
