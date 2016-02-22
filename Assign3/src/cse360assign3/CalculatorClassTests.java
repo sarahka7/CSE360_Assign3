@@ -5,9 +5,14 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class CalculatorClassTests {
-		int total = 25; 
-		String history = "0"; 
+	int total = 25; 
+	String history = "0"; 
 
+	@Test
+	public void testCalculator() {
+		Calculator test = new Calculator(); 
+		assertNotNull(test);
+	}
 
 	@Test
 	public void getTotalTest() {
@@ -40,8 +45,8 @@ public class CalculatorClassTests {
 	@Test
 	public void DivideTest() {
 		Calculator test = new Calculator();
-		int total = test.divide(5);
-		assertEquals(5, total);
+		int total = test.divide(0);
+		assertEquals(0, total);
 	}
 	
 	@Test

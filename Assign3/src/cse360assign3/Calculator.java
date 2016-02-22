@@ -26,9 +26,9 @@ public class Calculator {
 		return total;
 	}
 	
-	/** Add method passes in a value and returns nothing
+	/** Add method passes in a value, updates history and returns total
 	 *  @param int value 
-	 *  @return none
+	 *  @return total
 	 */
 	public int add (int value) {
 		total = total + value; 
@@ -36,10 +36,9 @@ public class Calculator {
 		return total; 
 	}
 	
-	/** Void method passes in a value and returns nothing
-	 *  @param int value 
-	 * @return 
-	 *  @return none
+	/** Subtract method passes in a value, updates history, and returns total
+	 * @param int value 
+	 * @return total
 	 */
 	public int subtract (int value) {
 		total =  total - value;
@@ -47,9 +46,9 @@ public class Calculator {
 		return total; 
 	}
 	
-	/** Multiply method passes in a value and returns nothing
+	/** Multiply method passes in a value, updates history, and returns total
 	 *  @param int value 
-	 *  @return none
+	 *  @return total
 	 */
 	public int multiply (int value) {
 		total = total * value; 
@@ -57,23 +56,26 @@ public class Calculator {
 		return total; 
 	}
 	
-	/** Divide method passes in a value and returns nothing
+	/** Divide method passes in a value, updates history, and returns nothing
 	 *  @param int value 
-	 *  @return none
+	 *  @return total
 	 */
 	public int divide (int value) {
 		if ( value == 0)
 		{
 			total = 0; 
 		}
-		total = total / value; 
+		else
+		{
+			total = total / value;
+		}
 		history = history + " / " +  value  + "";
 		return total; 
 	}
 	
-	/** getHistory method returns a string
+	/** getHistory method returns a history of all actions as a string
 	 *  @param none 
-	 *  @return string
+	 *  @return history 
 	 */
 	public String getHistory () {
 		return history;
